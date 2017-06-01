@@ -70,7 +70,6 @@
 }
 
 .app .chat .message {
-    background-color: #ddd;
     border: 1px solid black;
     padding: 5px;
     margin-bottom: 20px;
@@ -78,10 +77,12 @@
 }
 
 .app .chat .message.from-USER {
+    background-color: #edd;
     float: right;
 }
 
 .app .chat .message.from-HOST {
+    background-color: #ded;
     float: left;
 }
 

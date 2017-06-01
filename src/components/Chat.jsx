@@ -1,21 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import Message from './Message';
-import { participant } from '../const';
 
-export default function Chat() {
-    const date = new Date('2017-01-01 12:34:56')
+function Chat({ chat }) {
+    const messages = chat ? chat.messages.map((message) => {
+        return (
+            <Message ts={message.ts} from={message.from} key={message.ts}>
+                {message.content}
+            </Message>
+        );
+    }) : undefined;
     return (
         <div className="chat">
-            <Message ts={date} from={participant.HOST}>
-                Welcome to the chat
-            </Message>
-            <Message ts={date} from={participant.USER}>
-                hello world
-            </Message>
-            <Message ts={date} from={participant.HOST}>
-                You said: hello world
-            </Message>
+            {messages}
         </div>
     );
 }
+
+Chat.propTypes = {
+    chat: PropTypes.object
+};
+
+const mapStateToProps = (state) => {
+    return {
+        chat: state.selectedChat
+    }
+};
+
+export default connect(mapStateToProps)(Chat);

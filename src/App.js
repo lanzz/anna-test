@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+import reducer from './reducers';
+
 import Header from './components/Header';
 import ChatList from './components/ChatList';
 import Chat from './components/Chat';
-import reducer from './reducers';
+import Input from './components/Input';
 
 import './App.css';
 
@@ -18,7 +20,7 @@ class App extends Component {
                 <div className="app">
                     <Header />
                     <Chat />
-                    <div className="input"><textarea /></div>
+                    <Input />
                     <ChatList />
                 </div>
             </Provider>
