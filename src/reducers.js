@@ -19,7 +19,9 @@ function buildChat() {
 }
 
 function buildMessage(from, content) {
+    lastId += 1;
     return {
+        id: lastId,
         ts: new Date(),
         from: from,
         content: content

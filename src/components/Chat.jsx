@@ -7,7 +7,7 @@ import Message from './Message';
 function Chat({ chat }) {
     const messages = chat ? chat.messages.map((message) => {
         return (
-            <Message ts={message.ts} from={message.from} key={message.ts}>
+            <Message ts={message.ts} from={message.from} key={message.id}>
                 {message.content}
             </Message>
         );
