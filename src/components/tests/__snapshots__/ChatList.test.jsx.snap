@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul
+  class="chat-list"
+>
+  <li
+    class="selected"
+  >
+    <button
+      class="close"
+    >
+      ╳
+    </button>
+    You said: hello world
+  </li>
+  <li>
+    <button
+      class="close"
+    >
+      ╳
+    </button>
+    You said: ok then
+  </li>
+</ul>
+`;

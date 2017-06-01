@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="chat"
+>
+  <div
+    class="message from-HOST"
+  >
+    <div
+      class="ts"
+    >
+      Sent on Sun Jan 01 2017 12:34:56 GMT+0000 (GMT)
+    </div>
+    <div
+      class="content"
+    >
+      Welcome to the chat
+    </div>
+  </div>
+  <div
+    class="message from-USER"
+  >
+    <div
+      class="ts"
+    >
+      Sent on Sun Jan 01 2017 12:34:56 GMT+0000 (GMT)
+    </div>
+    <div
+      class="content"
+    >
+      hello world
+    </div>
+  </div>
+  <div
+    class="message from-HOST"
+  >
+    <div
+      class="ts"
+    >
+      Sent on Sun Jan 01 2017 12:34:56 GMT+0000 (GMT)
+    </div>
+    <div
+      class="content"
+    >
+      You said: hello world
+    </div>
+  </div>
+</div>
+`;

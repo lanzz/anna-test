@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="header"
+>
+  <button
+    class="add-chat-button"
+  >
+    Add chat
+  </button>
+  <h1>
+    An awesome chat app
+  </h1>
+</div>
+`;

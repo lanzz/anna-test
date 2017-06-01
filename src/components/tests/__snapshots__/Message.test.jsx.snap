@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="message from-undefined"
+>
+  <div
+    class="ts"
+  >
+    Sent on undefined
+  </div>
+  <div
+    class="content"
+  />
+</div>
+`;
