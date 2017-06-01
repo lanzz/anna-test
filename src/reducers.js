@@ -54,14 +54,18 @@ export default function reducer(state = initialState, action) {
             };
         case actionTypes.POST:
             const message = buildMessage(action.from, action.message);
+            const messages = [
+                ...state.selectedChat.messages,
+                message
+            ];
+            if (action.from === participant.USER) {
+                messages.push(buildMessage(participant.HOST, `You said: ${action.message}`));
+            }
             return {
                 ...state,
                 selectedChat: {
                     ...state.selectedChat,
-                    messages: [
-                        ...state.selectedChat.messages,
-                        message
-                    ],
+                    messages,
                     lastMessage: message
                 }
             };
